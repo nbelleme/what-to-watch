@@ -7,4 +7,7 @@ branches:
 
   # blocklist
   except:
-    - dev
+    - deveval ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+test:
+- oraclejdk8
