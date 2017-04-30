@@ -1,4 +1,10 @@
 language: java
+
 branches:
-	only:
-		- master
+  # safelist
+  only:
+    - master
+
+  # blocklist
+  except:
+    - dev
