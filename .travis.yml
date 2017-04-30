@@ -14,4 +14,4 @@ before_install:
 
 - ls
 
-- cat training.pem.enc
+- cat training.pem
