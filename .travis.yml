@@ -20,4 +20,4 @@ after_success:
   - eval "$(ssh-agent -s)" #start the ssh agent
   - chmod 600 training.pem # this key should have push access
   - ssh-add training.pem
-  - scp target/what-to-watch-0.0.1-SNAPSHOT.jar -i training.pem ec2-user@52.59.145.37:/
+  - scp target/what-to-watch-0.0.1-SNAPSHOT.jar -i training.pem ec2-user@52.59.145.37:/home/ec2-user/
