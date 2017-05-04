@@ -11,5 +11,5 @@ jdk:
 before_install:
   - openssl aes-256-cbc -K $encrypted_8dadb8712759_key -iv $encrypted_8dadb8712759_iv -in training.pem.enc -out training.pem -d
 
-script:
-  - cat "bonjour"
+after_success:
+  - ls
