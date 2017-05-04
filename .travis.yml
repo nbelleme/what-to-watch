@@ -22,4 +22,4 @@ after_success:
   - ssh-add training.pem
   - scp target/*.jar -i training.pem $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
   - ssh -i training.pem ec2-user@52.59.145.37 "pkill -f \"java -jar\“"
-  - ssh -i training.pem ec2-user@52.59.145.37 "mvn spring-boot:run"
+  - ssh -i training.pem ec2-user@52.59.145.37 "java -jar $APPLICATION-$VERSION.jar"
