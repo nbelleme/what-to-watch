@@ -13,6 +13,6 @@ public class ActorController {
 
     @RequestMapping(value = "/bonjour", method = RequestMethod.GET)
     public String test(){
-        return "This is my personnal test";
+        return "This is my very personnal test";
     }
 }
